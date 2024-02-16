@@ -2,14 +2,14 @@
 
 //cannot use string methods in number, same fo all other data types
 let name:string="Sudharsun";
-
 //no special value as float or int, just number
 let a:number =100;
-
 //boolean
 let isTrue:boolean = true;
 
-//any -stops type checking for the particular variable, is not a good idea to use.
+//any -keyword that stops type checking for the particular variable, is not a good idea to use.
+
+//-------------------------------------------------------------------------------------------------------------------------------//
 
 //FUNCTIONS
 function add(a:number){
@@ -39,6 +39,24 @@ const add2=(a:number):number=>{
     return a+100;
 }
 add2(10)
+
+//-------------------------------------------------------------------------------------------------------------------------------//
+
+//RETURN TYPE-OBJECTS
+function createUser():{name:string, age:number}{
+    return {
+        name: 'Sudharsun',
+        age: 19
+    }
+}
+createUser()
+
+//or 
+
+function createUser2({name:string, age:number}) {}
+let userCred={name: 'Sudharsun', age: 19};
+createUser2(userCred)
+
 
 
 export{}
