@@ -9,6 +9,16 @@ let isTrue:boolean = true;
 
 //any -keyword that stops type checking for the particular variable, is not a good idea to use.
 
+//array
+let arr:number[]=[1,2,3];
+let arr2:string[]=["a", "b", "c"];
+let arr3:any[]=[1, "a", true];
+//either or
+let arr4:(number|string)[]=[1, 2, "a", "b"];
+
+//FIXED VALUES
+let pi:3.14=3.14;
+
 //-------------------------------------------------------------------------------------------------------------------------------//
 
 //FUNCTIONS
